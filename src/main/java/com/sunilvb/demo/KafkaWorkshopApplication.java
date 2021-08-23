@@ -1,4 +1,4 @@
-package io.confluent.developer.kafkaworkshop.avro;
+package com.sunilvb.demo;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.beans.factory.annotation.Value;

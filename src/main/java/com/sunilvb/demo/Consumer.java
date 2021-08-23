@@ -1,9 +1,9 @@
-package io.confluent.developer.kafkaworkshop.avro;
+package com.sunilvb.demo;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import io.confluent.developer.User;
+import com.sunilvb.demo.Order;
 import lombok.extern.apachecommons.CommonsLog;
 
 @Service
@@ -14,7 +14,7 @@ public class Consumer {
       topics = "#{'${topic.name}'}",
       groupId = "simple-consumer"
   )
-  public void consume(User record) {
-    log.info(String.format("Consumed message -> %s", record));
+  public void consume(Order order) {
+    log.info(String.format("Consumed message -> %s", order));
   }
 }

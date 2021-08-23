@@ -1,5 +1,5 @@
 topic:
-  name: users
+  name: Order-avro
   partitions-num: 3
   replication-factor: 1
 server:
@@ -7,7 +7,7 @@ server:
 spring:
   kafka:
     properties:
-      bootstrap.servers: localhost:9092
+      bootstrap.servers: localhost:29092
       schema.registry.url: http://localhost:8081
     consumer:
       group-id: my-microservice
